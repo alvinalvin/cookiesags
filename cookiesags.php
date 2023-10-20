@@ -64,18 +64,18 @@ class plgsystemCookiesAgs extends JPlugin {
 
 	// add script
 	$doc->addScriptDeclaration("
-	$(document).ready(function(){
-					$.cookieBar({
-						message:'$msg',
-						acceptText:'$text_accept',
-						policyText:'$textpolic ',
-						expireDays:$expire,
-						bottom:$Position ,
-						fixed:true,
-						policyButton:$validate,
-						policyURL: '$url',
-						});
-				});
+	 $(document).ready(function(){
+	   $.cookieBar({
+	   message:'$msg',
+	   acceptText:'$text_accept',
+	   policyText:'$textpolic ',
+	   expireDays:$expire,
+	   bottom:$Position ,
+	   fixed:true,
+	   policyButton:$validate,
+	   policyURL: '$url',
+	});
+	 });
 
 ");
 	// end
