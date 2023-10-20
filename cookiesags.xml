@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2023 alert. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>plg_system_cookiesags</name>
+	<author>alvin gil saldaña </author>
+	<creationDate>October 2023</creationDate>
+	<copyright>Copyright (c) 2023 alert. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>alvin_gil@hotmail.com</authorEmail>
+	<authorUrl>https://github.com/alvinalvin</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="cookiesags">cookiesags.php</filename>
+		<filename>index.html</filename>
+		<filename>jquery.cookiebar.css</filename>
+		<filename>jquery.cookiebar.js</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_cookiesags.ini</language>
+		<language tag="en-GB">en-GB.plg_system_cookiesags.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="spacer" name="myspacerid" label="** styles**"/>
+          <field name="background" default="#192655" type="color" label="background cookie"/>
+					<field name="colortxt" default="#eeeeee" type="color" label="color text cookie"/>
+					<field name="colorbutton" default="#3876BF" type="color" label="background accept button "/>
+					<field name="hoverbutton" default="#E1AA74" type="color" label="hover accept button "/>
+					<field name="colorbuttonpolic" default="#E1AA74" type="color" label="background button policy "/>
+					<field name="hoverbuttonpolic" default="#3876BF" type="color" label="hover button policy "/>
+					<field name="msg" type="textarea" label="message"  rows="10" cols="5" />
+					<field name="text" type="text" label="acceptText" />
+					<field name="textpolic" type="text" label="policyText"/>
+					<field name="expire" type="text" default="365" label="expireDays"/>
+					<field name="Position" type="radio" default="0" label="Position" description="">
+          <option value="0">bottom</option>
+          <option value="1">top</option>
+          </field>
+					<field name="validatepolic" type="radio" default="0" label="button policy" description="">
+					<option value="0">true</option>
+					<option value="1">false</option>
+					</field>
+					<field name="url" type="url" default="https://www.jqueryscript.net/"
+					label=" URL policy" description="" size="10" />
+
+
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
